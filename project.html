@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+        <link
+         href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"crossorigin="anonymous">
+        <script src="index.js"></script>
+        <title>Mobilité Internationale </title>
+    </head>
+       
+<body>
+    <header class="wrapper">
+        
+        <nav class="nav">
+            <div class="nav-logo">
+                <!--<img src="logoesprit.png" alt="ESPRIT " class="IMG-ESPRIT"> -->
+    
+                <p>ESPRIT</p>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#login" class="link active">Home</a></li>
+                    <li><a href="#section1" class="link">Blog</a></li>
+                    <li><a href="#section2" class="link">Services</a></li>
+                    <li><a href="#section3" class="link">About</a></li>
+                    <li><a href="#section4" class="link">Contact Us</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-button">
+                <button class="btn white-btn" id="loginBtn" onclick="login()" >Sign In</button>
+                <button class="btn" id="registerBtn" onclick="register()" >Sign Up</button>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+        <!----------------------------- Form box ----------------------------------->    
+    <div class="form-box">
+        
+        <!------------------- login form -------------------------->
+
+        <div class="login-container" id="login">
+            <div class="top">
+                <span>Don't have an account? <a href="#login" onclick="register()">Sign Up</a></span>
+                <header>Login</header>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" name="email" placeholder="Username or Email">
+                <i class="bx bx-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Sign In">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="login-check">
+                    <label for="login-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Forgot password?</a></label>
+                </div>
+            </div>
+        </div>
+
+        <!------------------- registration form -------------------------->
+        <div class="register-container" id="register">
+            <div class="top">
+                <span>Have an account? <a href="#register" onclick="login()">Login</a></span>
+                <header>Sign Up</header>
+            </div>
+            <div class="two-forms">
+                <div class="input-box">
+                    <input type="text" class="input-field" name="firstname" placeholder="Firstname">
+                    <i class="bx bx-user"></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field"  name="lastname"  placeholder="Lastname">
+                    <i class="bx bx-user"></i>
+                </div>
+            </div>
+            <div class="input-box">
+                <input type="text" class="input-field" name="email" placeholder="Email">
+                <i class="bx bx-envelope"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" class="input-field" name="password" placeholder="Password">
+                <i class="bx bx-lock-alt"></i>
+            </div>
+            <div class="input-box">
+                <input type="submit" class="submit" value="Register">
+            </div>
+            <div class="two-col">
+                <div class="one">
+                    <input type="checkbox" id="register-check">
+                    <label for="register-check"> Remember Me</label>
+                </div>
+                <div class="two">
+                    <label><a href="#">Terms & conditions</a></label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+
+    <main>
+        <br><br>
+        <!-- Section 1 -->
+        <section class="section" id="section1">
+            <h2>MOBILITY-ONLINE</h2>
+            <h3>Expérience à l'international ?</h3>
+            <br><img src="img1.webp" alt="Image 1"></br>
+            <p>
+                Faire une partie de son cursus à l’étranger signifie s’ouvrir sur de nouvelles cultures, être curieux et audacieux, savoir surmonter une forme d’inconnu. Dans un monde globalisé dans lequel évoluera le futur ingénieur, il s’agit d’une expérience irremplaçable. ESPRIT a tissé des liens de partenariat avec des établissements d’enseignement supérieur étrangers permettant aux étudiants encours de scolarité de poursuivre des options spécifiques au sein de l’établissement partenaire(double cursus ou double diplôme). Cette opportunité est exclusivement ouverte aux meilleurs élèves d’Esprit qui allient excellent parcours scolaire, bonnes capacités de communication en anglais et en français et sens aigu des responsabilités : en effet la pérennité de ces accords dépend aussi largement du sérieux de l’assiduité et du succès des élèves d’ESPRIT. Pour l'année 2016 /2017, 71 étudiants sont en formation à l'étranger, en France ou aux Etats Unis. Parmi eux 11 bénéficien d'une bourse d'étude. Ce nombre de croissance constante d'une année sur l'autre représente enviro 10% d'une promotion.
+            </p>
+        </section>
+
+        <!-- Section 2 -->
+        <section class="section" id="section2">
+            <h2 >Our Services</h2>
+            <h2 class="section2"><em>«La curiosité permet de guérir l'ennui. Mais rien ne peut guérir la curiosité.»</em> <br><br>
+
+                Dorothy Parker</h2><br>
+
+            <p >
+                We offer a wide range of services to meet your needs. From web design and development to digital
+                marketing and more. Our team is here to help you grow your online presence and achieve your goals.</p>
+        </section>
+
+        <!-- Section 3 -->
+        <section class="section" id="section3">
+            <h2>About Us</h2>
+            <p>
+                ESPRIT School of Engineering was founded in 2003. Now, it has become the largest private university in Tunisia with more than 7000 students and about 250 full-time instructors. ESPRIT stands out thanks to strong ties with the corporate world, its academic partners, and the active pedagogy the university provides for its next generation of engineers in IT, Telecommunications, Electro-mechanics, and Civil Engineering.
+
+                All of its academic programs are EUR-ACE labelled, through the French accreditation agency: "Commision des Titres d'Ingénieurs".
+                
+                ESPRIT is also member of the CDIO initiative and the "Conférence des Grandes Ecoles", an association of the most prestigious business and engineering schools in France.
+                
+                Esprit is also a member of the UNITWIN/UNESCO Chairs Program that aims at promoting international inter-university cooperation and networking, reaching over 700 institutions in 116 countries.
+                
+                Through this network, higher education and research institutions all over the globe pool their resources, both human and material, to address pressing challenges and contribute to the development of their societies.
+                
+                Recently, Esprit joined “Agence Universitaire de la Francophonie” a world association regrouping 990 academic institutions that use French Language as lingua franca on all continents in 118 countries.
+                
+                Esprit Engineering is now a flagship entity along with Esprit prépa of the Esprit group comprising Esprit School of Business, Esprit Entreprise, Esprit Education and Top Skills.
+            
+            </p>
+        </section>
+
+        <!-- Section 4 -->
+        <section class="section" id="section4">
+            <h2>Contact Us</h2>
+            <p>
+                Have any questions or inquiries? Feel free to reach out to us through the contact form below or
+                give us a call. We'd love to hear from you and discuss how we can assist you with your projects.
+            </p>
+                  
+            <!---------------------------  Contact Us    ------------->
+
+            <form class="row col-6 m-5" >
+
+                <div class="col">
+                    <label for="firstName" class="form-label" >Prénom</label>
+    
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Prénom"
+                        aria-label="First name"
+                        id="sm">
+                </div>
+                <div class="col">
+                    <label for="lastName" class="form-label"  >Nom de famille</label>
+    
+                    <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Nom de famille"
+                        aria-label="Last name"
+                        id="ir">
+                </div>
+    
+                <div class="col-md-12 my-2">
+                    <label for="inputEmail4" class="form-label" id="rm">Email</label>
+                    <input type="email" class="form-control" placeholder=".@gmail.com" id="rm">
+                </div>
+    
+                <div class="col-12 my-2">
+                    <label for="inputAddress" class="form-label">Adresse</label>
+                    <input
+                        type="text"
+                        class="form-control"
+                        id="inputAddress"
+                        placeholder="votre adresse , code postal ">
+                </div>
+                <div class="col-md-6 my-2">
+                    <label for="inputCity" class="form-label">Ville</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4 my-2">
+                    <label for="inputState" class="form-label">Pays</label>
+                    <select id="inputState" class="form-select">
+                        <option selected="selected">Choisissez votre pays...</option>
+                        <option>Tunis</option>
+                        <option>France</option>
+                        <option>USA</option>
+                        <option>Maroc</option>
+                        <option>Autre</option>
+    
+                    </select>
+                </div>
+    
+                <div class="col-12 my-2">
+                    <button type="submit" class="btn btn-primary" onclick="valid()">Envoyer</button>
+                </div>
+            </form>
+            <!--Script Bootstrap-->
+            <script
+                src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+                crossorigin="anonymous">
+            </script>
+            
+         <div class="col-lg-4 col-md-4">
+            <div class="address-area">
+                <div class="addess"><i class="icofont-google-map"></i>
+                <img src="iconmaps.png" alt="iconmaps"style="padding: 50px;" >
+                <h4>Adresse</h4><p>1, 2 rue André Ampère - 2083 - Pôle Technologique - El Ghazala.</p>
+            </div>
+                <img src="iconmail.png" alt="iconmail" style="padding: 50px;" >
+                <div class="email"><i class="icofont-email"></i><h4>Email</h4><a href="mailto:contact@esprit.tn">contact@esprit.tn</a></div>
+                <div class="phone"><i class="icofont-phone"></i>
+                    <img src="icontele.png" alt="icontele" style="padding: 50px;" >
+                    <h4>Téléphone</h4><p>T (216) 70 250 000</p></div>
+           </div>
+        </div>
+            
+        </section>
+        </br>
+        </br>
+
+        <!-- Add more content here as needed -->
+        <script>
+   
+            function myMenuFunction() {
+             var i = document.getElementById("navMenu");
+         
+             if(i.className === "nav-menu") {
+                 i.className += " responsive";
+             } else {
+                 i.className = "nav-menu";
+             }
+            }
+          
+         </script>
+         
+         <script>
+         
+             var a = document.getElementById("loginBtn");
+             var b = document.getElementById("registerBtn");
+             var x = document.getElementById("login");
+             var y = document.getElementById("register");
+         
+             function login() {
+                 x.style.left = "4px";
+                 y.style.right = "-520px";
+                 a.className += " white-btn";
+                 b.className = "btn";
+                 x.style.opacity = 1;
+                 y.style.opacity = 0;
+             }
+         
+             function register() {
+                 x.style.left = "-510px";
+                 y.style.right = "5px";
+                 a.className = "btn";
+                 b.className += " white-btn";
+                 x.style.opacity = 0;
+                 y.style.opacity = 1;
+             }
+         
+         </script>
+
+         
+    </main>
+
+    <footer>
+        <p>&copy; 2023 All rights reserved . Mobilité Internationale</p>
+    </footer>
+</body>
+</html>
